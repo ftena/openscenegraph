@@ -1,0 +1,3 @@
+add_subdirectory(01_simple_geometry)
+add_subdirectory(03_defining_materials)
+
