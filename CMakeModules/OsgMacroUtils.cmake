@@ -9,6 +9,7 @@ MACRO(SETUP_EXE)
 
     add_executable(${TARGET_TARGETNAME} ${TARGET_SRC} ${TARGET_H})
     target_link_libraries(${TARGET_TARGETNAME} ${OPENSCENEGRAPH_LIBRARIES})
+    target_link_libraries(${TARGET_TARGETNAME} ${Boost_LIBRARIES})
 
 ENDMACRO(SETUP_EXE)
 
