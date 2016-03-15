@@ -1,3 +1,4 @@
 add_subdirectory(01_simple_geometry)
 add_subdirectory(03_defining_materials)
+add_subdirectory(04_texturing_and_positioning)
 
