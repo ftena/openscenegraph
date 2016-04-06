@@ -8,7 +8,7 @@ Dependencies:
 - boost
 - [OSG data resources](http://www.openscenegraph.org/index.php/download-section/data)
 
-## OSG
+### OSG
 
 To build the examples against OSG, there are some tips to take into account: 
 
@@ -28,7 +28,7 @@ To build the examples against OSG, there are some tips to take into account:
 	````
   - `DESIRED_QT_VERSION` is a variable which must be added to CMake manually
   
-## Environment variables
+### Environment variables
 
 Before running the examples, you need the following environment variables.
 
