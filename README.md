@@ -6,6 +6,7 @@ Dependencies:
 - OSG 3.4 64 bits
 - Qt 5.5
 - boost
+- [OSG data resources](http://www.openscenegraph.org/index.php/download-section/data)
 
 ## OSG
 
@@ -26,3 +27,20 @@ To build the examples against OSG, there are some tips to take into account:
 	DESIRED_QT_VERSION: 5
 	````
   - `DESIRED_QT_VERSION` is a variable which must be added to CMake manually
+  
+## Environment variables
+
+Before running the examples, you need the following environment variables.
+
+````  
+OSG_ROOT points to the base of the OSG file structure (the directory that contains include, src etc. subdirectories)
+OSG_BIN_PATH=%OSG_ROOT%\bin
+OSG_INCLUDE_PATH=%OSG_ROOT%\include
+OSG_LIB_PATH=%OSG_ROOT%\lib
+OSG_SAMPLES_PATH=%OSG_ROOT%\share\OpenSceneGraph\bin
+OSG_FILE_PATH should point to your Qt installation
+QT_DIR should point to your Qt installation
+OSG_3RDPARTY should point to the directory with OSG data resources
+
+PATH=%path%;%OSG_LIB_PATH%;%OSG_BIN_PATH%;%QT_DIR%\msvc2013_64\lib;%QT_DIR%\msvc2013_64\bin;%OSG_3RDPARTY%\lib;%OSG_3RDPARTY%\bin
+````  
