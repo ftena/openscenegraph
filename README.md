@@ -1,7 +1,11 @@
 # openscenegraph
 [OpenSceneGraph](http://www.openscenegraph.org/) (OSG) projects
 
-The code is based in OSG 3.4 64 bits.
+Dependencies:
+
+- OSG 3.4 64 bits
+- Qt 5.5
+- boost
 
 ## OSG
 
