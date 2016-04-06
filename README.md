@@ -8,7 +8,7 @@ The code is based in OSG 3.4 64 bits.
 To build the examples against OSG, there are some tips to take into account: 
 
 - Use CMake to generate the project. In Windows, OSG was compiled with Visual Studio 12 2013 Wind 64.
-- Dependencies are downloaded from http://www.openscenegraph.org/index.php/download-section/dependencies
+- Dependencies can be downloaded from http://www.openscenegraph.org/index.php/download-section/dependencies
 - Other dependencies:
   - [SDL 2](https://www.libsdl.org/download-2.0.php)
   - [FLTK 1.3.3](http://www.fltk.org/software.php)
