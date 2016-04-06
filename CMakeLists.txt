@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.3)
 project(OpenSceneGraph-Tutorials)
 
 set(CMAKE_MODULE_PATH ${OpenSceneGraph-Tutorials_SOURCE_DIR}/CMakeModules)
@@ -17,7 +17,7 @@ IF (WIN32)
   set(Boost_USE_STATIC_RUNTIME    OFF)
 ENDIF(WIN32)
 
-find_package( Boost REQUIRED COMPONENTS program_options )
+find_package( Boost COMPONENTS program_options )
 
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
@@ -28,7 +28,7 @@ IF (WIN32)
   set(OSG_DIR C:/workspace/osg/OpenSceneGraph-3.4.0-binaries)
 ENDIF(WIN32)
 
-find_package(OpenSceneGraph 3.4.0 COMPONENTS osgGA osgDB osgUtil osgViewer)
+find_package(OpenSceneGraph 3.4.0 COMPONENTS osgGA osgDB osgUtil osgViewer osgQt)
 
 if(OPENSCENEGRAPH_FOUND)
     include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})
@@ -41,4 +41,14 @@ endif(OPENSCENEGRAPH_FOUND)
 
 include(OsgMacroUtils)
 
+# find QT
+find_package(Qt5Widgets)
+find_package(Qt5WebKitWidgets)
+find_package(Qt5OpenGL)
+
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
+include_directories(${Qt5Core_INCLUDE_DIRS})
+include_directories(${Qt5OpenGL_INCLUDE_DIRS})
+
+add_subdirectory(apps)
 add_subdirectory(examples)
