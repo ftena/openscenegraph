@@ -1,3 +1,3 @@
 SET( TARGET_SRC osgviewer-qt.cpp )
 
-SETUP_EXAMPLE( osgviewer-qt 1 )
+SETUP_QT_EXAMPLE( osgviewer-qt )

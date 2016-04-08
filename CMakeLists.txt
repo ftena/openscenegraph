@@ -22,13 +22,16 @@ find_package( Boost COMPONENTS program_options )
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
+## find OpenGL
+find_package(OpenGL)
+
 # libOpenThreads & libosg automatically searched
 # if linking problems, add new REQUIRED libraries
 IF (WIN32)
   set(OSG_DIR C:/workspace/osg/OpenSceneGraph-3.4.0-binaries)
 ENDIF(WIN32)
 
-find_package(OpenSceneGraph 3.4.0 COMPONENTS osgGA osgDB osgUtil osgViewer osgQt)
+find_package(OpenSceneGraph 3.4.0 COMPONENTS osgGA osgDB osgUtil osgViewer osgQt osgShadow)
 
 if(OPENSCENEGRAPH_FOUND)
     include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})

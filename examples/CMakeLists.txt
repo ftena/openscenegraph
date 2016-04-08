@@ -1,4 +1,8 @@
 add_subdirectory(01_simple_geometry)
 add_subdirectory(03_defining_materials)
 add_subdirectory(04_texturing_and_positioning)
-
+add_subdirectory(05_fogging_effect)
+add_subdirectory(06_shading)
+add_subdirectory(07_opengl)
+add_subdirectory(08_billboarding)
+add_subdirectory(09_shadow_effect)
