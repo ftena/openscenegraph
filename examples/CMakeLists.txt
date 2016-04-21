@@ -7,3 +7,5 @@ add_subdirectory(07_opengl)
 add_subdirectory(08_billboarding)
 add_subdirectory(09_shadow_effect)
 add_subdirectory(10_switching_nodes)
+add_subdirectory(11_shaders)
+
